@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InsomniAid | Solutions</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body and Fonts */
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #a1f87f, #bedbb3);
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: #19571b;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+    }
+
+    .nav-links li a:hover {
+      background: white;
+      color: #4CAF50;
+      border-radius: 4px;
+    }
+
+    .hamburger-menu {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger-menu span {
+      background: white;
+      height: 3px;
+      width: 25px;
+      margin: 4px 0;
+    }
+
+    /* Container */
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #19571b;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      color: #19571b;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    p, li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .social-links a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+      }
+
+      .nav-links.active {
+        display: flex;
+        background: #4CAF50;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .hamburger-menu {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <div class="logo">InsomniAid</div>
+    <ul class="nav-links">
+      <li><a href="Home page - after login.html">Home</a></li>
+      <li><a href="Consultancy Form.html">Consultancy</a></li>
+    
+    </ul>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Solutions Content -->
+  <div class="container">
+    <h2>Personalized Insomnia Solutions</h2>
+
+    <h3>1. Daily Routine Adjustments</h3>
+    <ul>
+      <li>Start your day with 30 minutes of light exercise, such as yoga or walking, to reset your body clock.</li>
+      <li>Take short, relaxing breaks during the day to manage stress.</li>
+    </ul>
+
+    <h3>2. Dietary Recommendations</h3>
+    <ul>
+      <li>Finish dinner by 7:00 PM to allow proper digestion.</li>
+      <li>Incorporate sleep-promoting foods like whole grains, almonds, and bananas.</li>
+      <li>Avoid heavy, spicy meals and caffeine after noon.</li>
+    </ul>
+
+    <h3>3. Optimizing the Sleep Environment</h3>
+    <ul>
+      <li>Minimize noise using a white noise machine or earplugs.</li>
+      <li>Ensure complete darkness with blackout curtains or a sleep mask.</li>
+      <li>Choose a comfortable mattress and pillow suitable for your posture.</li>
+    </ul>
+
+    <h3>4. Evening Routine</h3>
+    <ul>
+      <li>Stick to a consistent bedtime and wake-up schedule.</li>
+      <li>Engage in calming activities like reading or meditation 30 minutes before bed.</li>
+      <li>Avoid screen time at least one hour before bed.</li>
+    </ul>
+
+    <h3>5. Natural Sleep Aids</h3>
+    <ul>
+      <li>Diffuse lavender essential oil in your bedroom.</li>
+      <li>Drink herbal teas like chamomile or passionflower before bed.</li>
+      <li>Consider melatonin supplements if needed (consult a doctor).</li>
+    </ul>
+
+    <h3>6. Behavioral Therapy Techniques</h3>
+    <ul>
+      <li>Practice the 4-7-8 breathing technique to calm your mind.</li>
+      <li>Use progressive muscle relaxation to reduce physical tension.</li>
+    </ul>
+
+    <h3>7. Tracking & Monitoring</h3>
+    <ul>
+      <li>Keep a sleep diary to identify patterns and triggers.</li>
+      <li>Gradually increase morning sunlight exposure to regulate your circadian rhythm.</li>
+    </ul>
+
+    <h3>8. Long-Term Goal</h3>
+    <p>Achieve 7-8 hours of uninterrupted sleep consistently within 4-6 weeks by following these steps.</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 InsomniAid. All Rights Reserved.</p>
+    <div class="social-links">
+      <a href="#">Twitter</a>
+      <a href="https://www.instagram.com/insomniaid.in/profilecard/?igsh=MXkxZ3IwbHhxcW81Yw==">Instagram</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
